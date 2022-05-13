@@ -2,9 +2,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Apple Chancery', sans-serif;
     min-height: 100vh;
-    background-color: #D3D3F8
+    background-color: #FFEBCD;
 }
 
 section {
@@ -22,20 +22,31 @@ section.sect2{
   justify-content: center;
 }
 
-#topofpage {
-  background-color: #9595BB;
+.image-text {
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  flex-direction: column;
+}
+
+.image-text img {
+  display: block;
+  margin: auto;
+}
+
+
+#topofpage {
+  background-color: #FFEBCD;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
 }
 
 #title {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Apple Chancery', serif;
   font-size: 2.75em;
 }
 
 #description {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Apple Chancery', serif;
   font-size: 2em;
 }
 
@@ -44,15 +55,6 @@ section.sect2{
   margin: 0px;
 }
 
-.captions {
-  font-family: 'Roboto', sans-serif;
-  font-size: .8em;
-  font-style: italic;
-  width: 500px;
-  margin: 0 auto;
-  text-align: justify;
-  padding-top: 10px;
-}
 
 .credit {
   font-size: .8em;
@@ -63,35 +65,35 @@ section.sect2{
 }
 
 .head1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Apple Chancery', serif;
   font-size: 2.7em;
   font-weight: bold;
-  color: #33336B;
+  color: #000000;
   display: flex;
   justify-content: center;
 }
 
 .head2{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Apple Chancery', serif;
   font-size: 2.2em;
   font-weight: 500;
-  color: #595959;
+  color: #000000;
   padding: 10px;
 }
 
 .head3 {
   font-size: 1.75em;
-  color: #33336B;
+  color: #000000;
 }
 
 .head3 a {
-  color: #33336B;
+  color: #000000;
 }
 
 .head4 {
   font-size: 1.2em;
   font-style: italic;
-  color: #595959;
+  color: #000000;
 }
 
 .dek {
@@ -105,10 +107,10 @@ section.sect2{
   width: 25%;
   min-width: 200px;
   justify-content: center;
-
+}
 ul {
   text-align: center;
-  list-style-type: circle;
+  list-style-type: disc;
   list-style-position: inside;
   margin-inline-start: 3em;
   margin-inline-end: 3rem;
@@ -118,7 +120,7 @@ ul {
 nav {
   margin: 0px;
   display: block;
-  background-color: #434368;
+  background-color: #5F9EA0;
   width: 100%;
 }
 
@@ -177,35 +179,32 @@ p {
   list-style-type: none;
 }
 
-#ragtime-photo {
-  object-position: 75% 15%;
-}
-
-#film-photo{
-  object-position: 72.5%;
-}
 
 #resume {
   object-position: center;
 }
 
 footer {
-  background-color: #9595BB;
+  background-color: #5F9EA0;
   width: 100%;
   padding: 15px;
   text-align: center;
   font-size: 1.75em;
+  font-family: 'Apple Chancery', serif;
 }
 
 footer a{
   text-decoration: none;
-  color: #33336B;
+  color: white;
   font-weight: 800;
 }
 
-@media (max-width: 800px;) {
+@media (min-width: 620px) {
+.image-text {
+  /*
+  flex-direction: row;
+  */
+}
 
-  .dek {
-    margin-inline-start: 5em;
-    margin-inline-end: 5em;
+
 }
